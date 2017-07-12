@@ -4,7 +4,7 @@ namespace Net.Chdk.Meta.Providers.Camera.Eos
 {
     sealed class EosCameraProvider : CameraProvider<EosCameraData, EosCameraModelData, EosCardData>, IEosCameraProvider
     {
-        public EosCameraProvider(IEncodingProvider encodingProvider, IBootProvider bootProvider, IEosCardProvider cardProvider)
+        public EosCameraProvider(IEncodingProvider encodingProvider, ICameraBootProvider bootProvider, IEosCameraCardProvider cardProvider)
             : base(encodingProvider, bootProvider, cardProvider)
         {
         }
