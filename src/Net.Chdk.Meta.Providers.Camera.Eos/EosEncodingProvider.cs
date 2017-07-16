@@ -2,8 +2,16 @@
 
 namespace Net.Chdk.Meta.Providers.Camera.Eos
 {
-    sealed class EosEncodingProvider : EncodingProvider
+    sealed class EosEncodingProvider : CategoryEncodingProvider
     {
+        #region ICategoryEncodingProvider Members
+
+        public override string CategoryName => "EOS";
+
+        #endregion
+
+        #region Encodings
+
         protected override EncodingData[] GetEncodings()
         {
             return new[]
@@ -11,5 +19,7 @@ namespace Net.Chdk.Meta.Providers.Camera.Eos
                 EmptyEncoding
             };
         }
+
+        #endregion
     }
 }

@@ -27,7 +27,6 @@
 
   <ItemGroup>
     <PackageReference Include="microsoft.extensions.dependencyinjection.abstractions" Version="1.1.1" />
-    <PackageReference Include="Net.Chdk.Meta.Providers.Camera.Core" Version="0.1.0-alpha" />
   </ItemGroup>
 
   <ItemGroup>

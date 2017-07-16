@@ -2,7 +2,7 @@
 
 namespace Net.Chdk.Meta.Providers.Camera.Eos
 {
-    public abstract class EosCameraCardProvider : CameraCardProvider<EosCardData>, IEosCameraCardProvider
+    public abstract class EosCameraCardProvider : ProductCameraCardProvider<EosCardData>
     {
         protected override string GetCardSubtype(uint modelId)
         {

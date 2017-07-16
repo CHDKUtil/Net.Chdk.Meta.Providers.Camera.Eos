@@ -15,9 +15,9 @@ namespace Net.Chdk.Meta.Providers.Camera.Eos
             VersionProvider = versionProvider;
         }
 
-        public override EosCameraModelData GetModel(string platform, string[] names, ListPlatformData list, TreePlatformData tree)
+        public override EosCameraModelData GetModel(string platform, string[] names, ListPlatformData list, TreePlatformData tree, string productName)
         {
-            var model = base.GetModel(platform, names, list, tree);
+            var model = base.GetModel(platform, names, list, tree, productName);
             model.Versions = GetVersions(platform, list, tree);
             return model;
         }
