@@ -13,5 +13,13 @@ namespace Net.Chdk.Meta.Providers.Camera.Eos
                 .AddSingleton<IEncodingProvider, EosEncodingProvider>()
                 .AddSingleton<IVersionProvider, VersionProvider>();
         }
+
+        public static IServiceCollection AddEosCameraProviders(this IServiceCollection serviceCollection)
+        {
+            return serviceCollection
+                .AddSingleton<ICameraPlatformProvider, EosCameraPlatformProvider>()
+                .AddSingleton<ICameraValidator, EosCameraValidator>()
+                .AddSingleton<ICameraModelValidator, EosCameraModelValidator>();
+        }
     }
 }
