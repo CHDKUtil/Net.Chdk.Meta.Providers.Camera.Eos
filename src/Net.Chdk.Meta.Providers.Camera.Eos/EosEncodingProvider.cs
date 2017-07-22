@@ -16,7 +16,7 @@ namespace Net.Chdk.Meta.Providers.Camera.Eos
         {
             return new[]
             {
-                EmptyEncoding
+                EncodingData.Empty
             };
         }
 
